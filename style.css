@@ -1,0 +1,19 @@
+#MyName{
+    position: relative;
+    margin:auto;
+    text-align: center;
+}
+h1{
+    display: none;
+}
+h4{
+    display: none;
+}
+#FirstPic{
+    height: 350px;
+    width: 100%;
+}
+.float-right{
+float: right;
+width:110px;
+}
