@@ -15,7 +15,38 @@
         $(document).ready(function () {
             $("#CompanyName").fadeIn(2000);
             $("#text").fadeIn(4000);
-        });
+
+
+            $("#FirstEmployee").hover(function () {
+                $("#PicEmployee1").fadeOut("slow");
+                $("#dani").show();
+            },
+                function () {
+                    $("#PicEmployee1").fadeIn("slow");
+                    $("#dani").hide();
+                });
+
+
+            $("#SecondEmployee").hover(function () {
+                $("#PicEmployee2").fadeOut("slow");
+                $("#moshe").show();
+                
+            },
+                function () {
+                    $("#PicEmployee2").fadeIn("slow");
+                    $("#moshe").hide();
+                });
+
+
+            $("#ThirdEmployee").hover(function () {
+                $("#PicEmployee3").fadeOut("slow");
+                $("#hanoh").show();
+            },
+                function () {
+                    $("#PicEmployee3").fadeIn("slow");
+                    $("#hanoh").hide();
+                });
+});
     </script>
 </head>
 <header>
@@ -52,22 +83,26 @@
     <hr>
     <div class="container">
         <div class="row">
-
-            <div class="col">
-                <img src="blue.png">
+                <h1 id="ourteam" class="col">Meet our team</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="FirstEmployee" class="col">
+                    <div id="dani">Dani</div>
+                <img id="PicEmployee1" src="Dani.jfif">
             </div>
 
-            <div class="col">
-                <img src="red2.png">
+            <div id="SecondEmployee" class="col">
+                    <div id="moshe">Moshe</div>
+                <img id="PicEmployee2" src="Moshe.jfif">
             </div>
 
-            <div class="col">
-                <img src="green2.png">
+            <div id="ThirdEmployee" class="col">
+                    <div id="hanoh">Hanoh</div>
+                <img id="PicEmployee3" src="Hanoh.jfif">
             </div>
-
         </div>
     </div>
 </body>
-
-
 </html>
