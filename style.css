@@ -1,19 +1,66 @@
-#MyName{
+/* header{
+    direction: rtl;
+} */
+
+body{
+    direction: rtl;
+    /* height: 4000px; */
+}
+.navbar{
+    background-color: #E9ECFF;
+    overflow: hidden;
+    position: sticky;
+}
+#OurName{
     position: relative;
     margin:auto;
     text-align: center;
 }
-h1{
+#CompanyName{
     display: none;
 }
-h4{
+#text{
     display: none;
 }
 #FirstPic{
-    height: 350px;
+    height: 200px;
     width: 100%;
 }
 .float-right{
 float: right;
 width:110px;
+}
+#dani{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 95px;
+}
+#moshe{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 95px;
+}
+#hanoh{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 95px;
+}
+#HomeContent{
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    display: none;
+    text-align: center;
+}
+#OurTeam{
+    text-align: center;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
 }
