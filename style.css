@@ -4,10 +4,9 @@
 
 body{
     direction: rtl;
-    /* height: 4000px; */
 }
 .navbar{
-    background-color: #E9ECFF;
+    background-color: #f3f9fe;
     overflow: hidden;
     position: sticky;
 }
@@ -23,7 +22,7 @@ body{
     display: none;
 }
 #FirstPic{
-    height: 200px;
+    height: 350px;
     width: 100%;
 }
 .float-right{
@@ -58,9 +57,26 @@ width:110px;
 #OurTeam{
     text-align: center;
 }
-.navbar-fixed {
+/* .navbar-fixed {
     top: 0;
     z-index: 100;
   position: fixed;
     width: 100%;
+} */
+.rounddiv{
+    background-color: aqua;
+    /* border: 2px solid aqua; */
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    transition: background-color 0.3s ease-out;
+    /* position: relative; */ 
+    margin: 35px;  
 }
+
+.rounddiv:hover{
+    background: gray;
+    transition: background-color 0.3s ease-in;
+    position: relative;
+}
+
