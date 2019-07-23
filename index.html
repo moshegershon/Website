@@ -10,46 +10,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='node_modules/jquery/dist/jquery.min.js'></script>
     <script>
 
-        $(document).ready(function () {
-            $("#CompanyName").fadeIn(2000);
-            $("#text").fadeIn(4000);
-            $('#HomeContent').fadeIn(4100);
+        // $(document).ready(function () {
+        //     $("#CompanyName").fadeIn(2000);
+        //     $("#text").fadeIn(4000);
+        //     $('#HomeContent').fadeIn(4100);
 
 
-            $("#FirstEmployee").hover(function () {
-                $("#PicEmployee1").fadeOut("slow");
-                $("#dani").show();
-            },
-                function () {
-                    $("#PicEmployee1").fadeIn("slow");
-                    $("#dani").hide();
-                });
+        //     $("#FirstEmployee").hover(function () {
+        //         $("#PicEmployee1").fadeOut("slow");
+        //         $("#dani").show();
+        //     },
+        //         function () {
+        //             $("#PicEmployee1").fadeIn("slow");
+        //             $("#dani").hide();
+        //         });
 
 
-            $("#SecondEmployee").hover(function () {
-                $("#PicEmployee2").fadeOut("slow");
-                $("#moshe").show();
+        //     $("#SecondEmployee").hover(function () {
+        //         $("#PicEmployee2").fadeOut("slow");
+        //         $("#moshe").show();
 
-            },
-                function () {
-                    $("#PicEmployee2").fadeIn("slow");
-                    $("#moshe").hide();
-                });
+        //     },
+        //         function () {
+        //             $("#PicEmployee2").fadeIn("slow");
+        //             $("#moshe").hide();
+        //         });
 
 
-            $("#ThirdEmployee").hover(function () {
-                $("#PicEmployee3").fadeOut("slow");
-                $("#hanoh").show();
-            },
-                function () {
-                    $("#PicEmployee3").fadeIn("slow");
-                    $("#hanoh").hide();
-                });
-        });
+        //     $("#ThirdEmployee").hover(function () {
+        //         $("#PicEmployee3").fadeOut("slow");
+        //         $("#hanoh").show();
+        //     },
+        //         function () {
+        //             $("#PicEmployee3").fadeIn("slow");
+        //             $("#hanoh").hide();
+        //         });
+        // });
 
     </script>
 </head>
@@ -84,72 +84,55 @@
                 </ul>
             </div>
             <div>
-            <span> <img src="logo1.png"  id="logo"></img></span>
-            </div>         
+                <span> <img src="Logo2.png" id="logo"></img></span>
+            </div>
         </nav>
         <!-- <img src="logo.png" class="float-right" id="logo"></img> -->
     </header>
-    
-    <video src="Ocean.mp4" autoplay loop id="OpeningVideo"></video>
-    
+
+    <video src="Street.mp4" autoplay loop id="OpeningVideo"></video>
+
     <!-- <img id="FirstPic" src="brush.jpg"> -->
+
     <h1 id="TextOnVideo1">המקום לבניית,עיצוב וקידום האתר שלכם,</h1>
     <h2 id="TextOnVideo2">בואו להפוך חלום למציאות.</h2>
-    <div id="OurName">
-        <h1 id="CompanyName">XDA</h1>
-        <h4 id="text">נעים להכיר</h4>
-    </div>
-    <div id="HomeContent">
-        היום כדי להשאיר את החותם הכי משמעותי ולקדם את העסק שלכם בצורה הטובה ביותר <br>אתם צריכים להיות כאן, בסביבה
-        טכנולוגית וחדשנית.
-        <br> אנחנו מאמינים ביצירתיות, בקו צעיר ומרענן שיוביל אתכם הכי גבוה שאפשר.
-        <br> יחד נבנה עבורכם אתר בהתאמה אישית ומדוייקת לצרכים שלכם, הכולל פתרונות מתקדמים ועיצוב חדשני.
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row">
-            <h1 id="OurTeam" class="col">המפתחים שלנו</h1>
+    <div id="BodyContent">
+        <div id="OurName">
+            <img id="PoinRightArorow" src="arrow.png">
+            <img id="PoinLeftArorow" src="arrow.png">
+            <h1 id="CompanyName">XDA</h1>
+            <h4 id="text">נעים להכיר</h4>
         </div>
-    </div>
-    <div class="container round">
-        <div class="row">
-            <span class="icon-lightbulb"></span>
-            <div class="rounddiv" class="col"></div>
-            <!-- <div id="FirstEmployee" class="col">
-                <div id="dani">
-                    בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                </div>
-                <img id="PicEmployee1" src="red2.png">
-            </div> -->
-            <div id="RoundDivsDiv"></div>
-            <div class="rounddiv" class="col"></div>
-            <!-- 
-            <div id="SecondEmployee" class="col">
-                <div id="moshe">
-                    בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                </div>
-                <img id="PicEmployee2" src="green2.png">
-            </div> -->
-
-            <div class="rounddiv" class="col"></div>
-            <!-- <div class="rounddiv" class="col"></div>
-            <div class="rounddiv" class="col"></div> -->
-
-            <!-- <div id="ThirdEmployee" class="col">
-                <div id="hanoh">
-                    בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                    <br> בלה בלה בלה בלה
-                </div>
-                <img id="PicEmployee3" src="blue.png">
+        <div id="HomeContent">
+            היום כדי להשאיר את החותם הכי משמעותי ולקדם את העסק שלכם בצורה הטובה ביותר <br>אתם צריכים להיות כאן, בסביבה
+            טכנולוגית וחדשנית.
+            <br> אנחנו מאמינים ביצירתיות, בקו צעיר ומרענן שיוביל אתכם הכי גבוה שאפשר.
+            <br> יחד נבנה עבורכם אתר בהתאמה אישית ומדוייקת לצרכים שלכם, הכולל פתרונות מתקדמים ועיצוב חדשני.
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <h1 id="OurTeam" class="col">הדרך שלך להצלחה</h1>
             </div>
-        </div> -->
+        </div>
+        <div class="container round">
+            <div class="row">
+                <span class="icon-lightbulb"></span>
+                <div class="rounddiv" class="col"></div>
+                <div class="rounddiv" class="col"></div>
+                <div class="rounddiv" class="col"></div>
+
+            </div>
         </div>
     </div>
+    <footer>
+        <hr>
+        <img id="FooterLogo" src="logo1.png">
+
+        <a id="SocialMediaLogo" href="www.facebook.com"><img src="facebook.png"></a>
+        <a id="SocialMediaLogo" href="www.instagram.com"><img src="instagram.png"></a>
+        <a id="SocialMediaLogo" href="www.twitter.com"><img src="twitter.png"></a>
+    </footer>
 </body>
 
 </html>

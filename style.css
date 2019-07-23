@@ -4,6 +4,7 @@
 
 body{
     direction: rtl;
+    max-height: 2000px;
 }
 
 #navbar{    
@@ -42,13 +43,14 @@ body{
     position: relative;
     margin:auto;
     text-align: center;
+    top: 0;
 }
-#CompanyName{
+/* #CompanyName{
     display: none;
 }
 #text{
     display: none;
-}
+} */
 #FirstPic{
     height: 350px;
     width: 100%;
@@ -92,7 +94,7 @@ cursor: pointer;
     font-size: 20px;
     /* font-style: italic; */
     /* font-family: "Times New Roman", Times, serif; */
-    display: none;
+    /* display: none; */
     text-align: center;
 }
 #OurTeam{
@@ -126,9 +128,35 @@ cursor: pointer;
     overflow: hidden;
 }
 
-#PencilIcon{
+/* #PencilIcon{
 height: 50px;
 position: relative;
 top:104px;
 right: 202px;
+} */
+#PoinRightArorow{
+    position: relative;
+    top: 282px;
+    right: 585px;
+background-color:transparent; 
+}
+#PoinLeftArorow{
+    position: relative;
+    top: 282px;
+    right: -585px;
+background-color:transparent; 
+transform: rotate(180deg);
+}
+#BodyContent{
+    position: relative;
+    top: -500px;
+}
+#FooterLogo{
+    position: relative;
+    left:560px;
+    top: -105px;
+    width: 250px;    
+}
+#SocialMediaLogo{
+    margin-right:10px 
 }
