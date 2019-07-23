@@ -9,10 +9,10 @@ body{
 #navbar{    
     padding-top:30px;
     padding-bottom:30px;
-    position:absolute;
-    top:0;
+    position: absolute;;
+    top:-93;
     width:100%;
-    z-index:1;;
+    z-index:1;
 }
 .nav-link{
     color:white;
@@ -53,10 +53,13 @@ body{
     height: 350px;
     width: 100%;
 }
-.float-right{
-float: right;
-width:120px;
-font-size: 25px;
+#logo{
+/* position: absolute; */
+top: 0;
+float: left;
+max-height: 100px;
+width:150px;
+/* font-size: 25px;  */
 color:white;
 cursor: pointer;
 }
