@@ -50,12 +50,37 @@
         //             $("#hanoh").hide();
         //         });
         // });
+        $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+          $("#navbar").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          $(".nav-link").css("color","black");
+        } else {
+          $("#navbar").css("background-color", "transparent" ); // if not, change it back to transparent
+          $(".nav-link").css("color","white");
+        }
+      });
+    });
+//     var myNav = document.getElementById('navbar');
+// window.onscroll = function () { 
+//     "use strict";
+//     if (document.body.scrollTop >= 10 ) {
+//         console.log(11)
+//         myNav.addClass("nav-colored");
+//         myNav.removeClass("nav-transparent");
+//     } 
+//     else {
+//         myNav.addClass("nav-transparent");
+//         myNav.removeClass("nav-colored");
+//     }
+// };
 
     </script>
 </head>
 
 
-<body style="background-color: #f3f9fe">
+<body>
+    <!-- style="background-color: #f3f9fe" -->
     <header>
         <nav class="navbar navbar-expand-lg " id="navbar">
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -76,7 +101,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">המפתחים שלנו</a>
+                        <a class="nav-link" href="#">הצוות שלנו</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">צור קשר</a>
@@ -87,20 +112,31 @@
                 <span> <img src="Logo2.png" id="logo"></img></span>
             </div>
         </nav>
-        <!-- <img src="logo.png" class="float-right" id="logo"></img> -->
     </header>
 
     <video src="Street.mp4" autoplay loop id="OpeningVideo"></video>
 
-    <!-- <img id="FirstPic" src="brush.jpg"> -->
 
     <h1 id="TextOnVideo1">המקום לבניית,עיצוב וקידום האתר שלכם,</h1>
     <h2 id="TextOnVideo2">בואו להפוך חלום למציאות.</h2>
     <div id="BodyContent">
         <div id="OurName">
-            <img id="PoinRightArorow" src="arrow.png">
-            <img id="PoinLeftArorow" src="arrow.png">
-            <h1 id="CompanyName">XDA</h1>
+            <div class="container">
+                <div class="row">
+                    <svg class="col _1LGPcGiAwvNAySV0GUsZCr" width="330.36307673970236" height="50.48273559444645"
+                        viewBox="0 0 294.4836146106559 45">
+                        <path class="" d="M271.5836146106559,20.1H0V25.6H294.4836146106559V20.1Z" fill="#c5c6c7"></path>
+                        <use xlink:href="#__id619_0"></use>
+                    </svg>
+                    <h1 id="CompanyName" class="col">XDA</h1>
+                    <svg class="col _1LGPcGiAwvNAySV0GUsZCr" width="330.36307673970236" height="50.48273559444645"
+                        viewBox="0 0 294.4836146106559 45">
+                        <path class="" d="M271.5836146106559,20.1H0V25.6H294.4836146106559V20.1Z" fill="#c5c6c7"></path>
+                        <use xlink:href="#__id619_0"></use>
+                    </svg>
+
+                </div>
+            </div>
             <h4 id="text">נעים להכיר</h4>
         </div>
         <div id="HomeContent">
@@ -112,7 +148,7 @@
         <hr>
         <div class="container">
             <div class="row">
-                <h1 id="OurTeam" class="col">הדרך שלך להצלחה</h1>
+                <h1 id="OurTeam" class="col">הדרך שלכם להצלחה</h1>
             </div>
         </div>
         <div class="container round">
@@ -121,17 +157,21 @@
                 <div class="rounddiv" class="col"></div>
                 <div class="rounddiv" class="col"></div>
                 <div class="rounddiv" class="col"></div>
-
             </div>
         </div>
     </div>
     <footer>
         <hr>
-        <img id="FooterLogo" src="logo1.png">
-
-        <a id="SocialMediaLogo" href="www.facebook.com"><img src="facebook.png"></a>
-        <a id="SocialMediaLogo" href="www.instagram.com"><img src="instagram.png"></a>
-        <a id="SocialMediaLogo" href="www.twitter.com"><img src="twitter.png"></a>
+        <div class="container">
+            <div class="row" style="justify-content: center">
+                <img class="col-auto" id="FooterLogo" src="logo2.png">
+            </div>
+            <div class="row" style="justify-content: center">
+                <a class="col-auto" id="SocialMediaLogo" href="www.twitter.com"><img src="twitter.png"></a>
+                <a class="col-auto" id="SocialMediaLogo" href="www.instagram.com"><img src="instagram.png"></a>
+                <a class="col-auto" id="SocialMediaLogo" href="www.facebook.com"><img src="facebook.png"></a>
+            </div>
+        </div>
     </footer>
 </body>
 

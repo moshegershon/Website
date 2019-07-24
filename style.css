@@ -4,16 +4,19 @@
 
 body{
     direction: rtl;
-    max-height: 2000px;
+    /* max-height: 2000px; */
 }
 
-#navbar{    
+#navbar{
+    overflow: hidden;
+    position: fixed;    
     padding-top:30px;
     padding-bottom:30px;
-    position: absolute;;
-    top:-93;
+    /* position: absolute;; */
+    top:0;
     width:100%;
     z-index:1;
+    transition: background-color 0.3s ease-in;
 }
 .nav-link{
     color:white;
@@ -22,6 +25,13 @@ body{
 .nav-link:hover{
     color:aquamarine;
 }
+.nav-colored { 
+    background-color:#000; 
+}
+.nav-transparent { 
+    background-color:transparent;
+}
+
 #TextOnVideo1{
     font-size: 50px;
     /* padding-top:30px;
@@ -108,7 +118,7 @@ cursor: pointer;
 } */
 
 .rounddiv{
-    background-color: rgba(38, 190, 190, 0.945);
+    background-color: rgb(2, 102, 112);
     /* border: 2px solid aqua; */
     border-radius: 75px;
     width: 150px;
@@ -147,16 +157,20 @@ background-color:transparent;
 background-color:transparent; 
 transform: rotate(180deg);
 }
-#BodyContent{
+/* #BodyContent{
     position: relative;
     top: -500px;
-}
+} */
 #FooterLogo{
-    position: relative;
+    /* position: relative;
     left:560px;
-    top: -105px;
-    width: 250px;    
+    top: -105px;*/
+    width:250px;     
+    /* text-align: center; */
 }
 #SocialMediaLogo{
     margin-right:10px 
+}
+footer{
+    background-color: rgba(77, 75, 75, 0.157);
 }
