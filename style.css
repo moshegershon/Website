@@ -28,18 +28,17 @@ body{
 }
 .nav-colored { 
     background-color:#000; 
-}
-.nav-transparent { 
+} 
+ .nav-transparent { 
     background-color:transparent;
 }
 #logo{
-    /* position: absolute; */
     top: 0;
     float: left;
     max-height: 100px;
     width:150px;
     /* font-size: 25px;  */
-    color:white;
+    /* color:white; */
     cursor: pointer;
     }
 #TextOnVideo1{
@@ -187,4 +186,7 @@ footer{
     color: white;
     /* width: 128px;
     height: 128px; */
+}
+.row{
+    justify-content:center;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 1 ) { // check if user scrolled more than 50 from top of the browser window
+                $("#navbar").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                $(".nav-link").css("color", "black");
+            } else {
+                $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
+                $(".nav-link").css("color", "white");
+            }
+        });
+    });
+</script>
 </head>
+
 <body>
     <!-- style="background-color: #f3f9fe" -->
     <header>
@@ -27,7 +42,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="about.html">אודות
+                        <a class="nav-link" href="process.html">תהליך
                             <!-- <span class="sr-only">(current)</span> -->
                         </a>
                     </li>
@@ -49,9 +64,37 @@
             </div>
         </nav>
     </header>
-    <!-- <img src="splash.jpg" id="TopImg"> -->
-    <div>moshe</div>
-    <div class="footer">
+    <div>
+        <img src="process1.jpg" id="ProcessImg">
+    </div>
+    <div class="container" >
+        <div class="row" >
+                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num1.jpg" alt="">
+            <div id="moshe" class="col-auto">אפיון</div>
+            <img src="green2.png" alt="">
+        </div>
+        <div class="row" style="direction: ltr">
+                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num2.jpg" alt="">
+            <div id="moshe" class="col-auto">עיצוב</div>
+            <img id="DesignImg" src="Design.jpg" alt="">
+        </div>
+        <div class="row">
+                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num3.jpg" alt="">
+            <div id="moshe" class="col-auto">פיתוח</div>
+            <img src="green2.png" alt="">
+        </div>
+        <div class="row" style="direction: ltr">
+                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num4.jpg" alt="">
+            <div id="moshe" class="col-auto">קידום</div>
+            <img src="green2.png" alt="">
+        </div>
+        <div class="row">
+                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num5.jpg" alt="">
+            <div id="moshe" class="col-auto">השקה</div>
+            <img src="green2.png" alt="">
+        </div>
+    </div>
+    <footer>
         <hr>
         <div class="container">
             <div class="row" style="justify-content: center">
@@ -63,5 +106,5 @@
                 <a class="col-auto" id="SocialMediaLogo" href="www.facebook.com"><img src="facebook.png"></a>
             </div>
         </div>
-    </div>
-    </body>
+    </footer>
+</body>
