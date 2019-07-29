@@ -11,18 +11,58 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='node_modules/jquery/dist/jquery.min.js'></script>
     <script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 1 ) { // check if user scrolled more than 50 from top of the browser window
-                $("#navbar").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".nav-link").css("color", "black");
-            } else {
-                $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
-                $(".nav-link").css("color", "white");
-            }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+                    $("#navbar").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $(".nav-link").css("color", "black");
+                } else {
+                    $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
+                    $(".nav-link").css("color", "white");
+                }
+            });
+            //   $("#rounddiv1").hover(function(){
+            //     $("#RoundDivText1").animate({right: '50%'});
+            //     $("#RoundDivText1").show();
+            //   },
+            //   function(){
+            //     $("#RoundDivText1").hide();
+            //   });
+
+            //   $("#rounddiv2").hover(function(){
+            //     $("#RoundDivText2").animate({left: '50%'});
+            //     $("#RoundDivText2").show();
+            //   },
+            //   function(){
+            //     $("#RoundDivText2").hide();
+            //   });
+
+            //   $("#rounddiv3").hover(function(){
+            //     $("#RoundDivText3").animate({right: '50%'});
+            //     $("#RoundDivText3").show();
+            //   },
+            //   function(){
+            //     $("#RoundDivText3").hide();
+            //   });
+
+            //   $("#rounddiv4").hover(function(){
+            //     $("#RoundDivText4").animate({left: '50%'});
+            //     $("#RoundDivText4").show();
+            //   },
+            //   function(){
+            //     $("#RoundDivText4").hide();
+            //   });
+
+
+            //   $("#rounddiv5").hover(function(){
+            //     $("#RoundDivText5").animate({right: '50%'});
+            //     $("#RoundDivText5").show();
+            //   },
+            //   function(){
+            //     $("#RoundDivText5").hide();
+            //   });
         });
-    });
-</script>
+    </script>
 </head>
 
 <body>
@@ -65,35 +105,83 @@
         </nav>
     </header>
     <div>
-        <img src="process1.jpg" id="ProcessImg">
+        <img src="process3.jpg" id="ProcessImg">
     </div>
-    <div class="container" >
-        <div class="row" >
-                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num1.jpg" alt="">
-            <div id="moshe" class="col-auto">אפיון</div>
-            <img src="green2.png" alt="">
-        </div>
-        <div class="row" style="direction: ltr">
-                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num2.jpg" alt="">
-            <div id="moshe" class="col-auto">עיצוב</div>
-            <img id="DesignImg" src="Design.jpg" alt="">
-        </div>
+
+    <h1 id="ProcessTopic">תהליך בניית האתר</h1>
+
+    <div class="container round">
         <div class="row">
-                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num3.jpg" alt="">
-            <div id="moshe" class="col-auto">פיתוח</div>
-            <img src="green2.png" alt="">
+            <div class="rounddiv" id="rounddiv1" class="col">
+                <h2>איפיון</h2>
+            </div>
+            <div class="col" id="RoundDivText1">Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+            </div>
         </div>
-        <div class="row" style="direction: ltr">
-                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num4.jpg" alt="">
-            <div id="moshe" class="col-auto">קידום</div>
-            <img src="green2.png" alt="">
+
+
+
+        <div class="row" style="direction:ltr">
+            <div class="rounddiv" id="rounddiv2" class="col">
+                <h2>עיצוב</h2>
+            </div>
+            <div class="col" id="RoundDivText2"Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                    printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+                    Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                    printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br> </div>
         </div>
+
+
+
         <div class="row">
-                <img src="https://www.fullpower.co.il/Uploads/בניית-אתרים/num5.jpg" alt="">
-            <div id="moshe" class="col-auto">השקה</div>
-            <img src="green2.png" alt="">
+            <div class="rounddiv" id="rounddiv3" class="col">
+                <h2>פיתוח</h2>
+            </div>
+            <div class="col" id="RoundDivText3"Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                    printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+                    Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                    printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br> </div>
+        </div>
+
+
+
+        <div class="row" style="direction:ltr">
+            <div class="rounddiv" id="rounddiv4" class="col">
+                <h2>קידום</h2>
+            </div>
+            <div class="col" id="RoundDivText4">Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br> </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="rounddiv" id="rounddiv5" class="col">
+                <h2>השקה</h2></i>
+            </div>
+            <div class="col" id="RoundDivText5">Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not only <br> </div>
         </div>
     </div>
+
+
     <footer>
         <hr>
         <div class="container">
