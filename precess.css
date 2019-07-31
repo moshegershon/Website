@@ -85,15 +85,15 @@ text-align: center;
     margin-left: 115px; 
     margin-top: 50px; 
     margin-bottom: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.rounddiv:hover{
+/* .rounddiv:hover{
     background: rgb(161, 161, 161);
     transition: background-color 0.3s ease-in;
     position: relative;
     overflow: hidden;
-}
+} */
    
 h2{
     color:white;
