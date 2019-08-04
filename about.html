@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>xda.co.il</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+                        $("#navbar").css("background-color", "rgba(0, 0, 0, 0.1)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                        $(".nav-link").css("color", "black");
+                    } else {
+                        $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
+                        $(".nav-link").css("color", "white");
+                    }
+                });
+            });
+            </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- <a class="navbar-brand" href="#">בית</a> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">בית</a>
+                        <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="process.html">תהליך
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">אודות
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">הצוות שלנו</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="index.html">
+                    <span>
+                        <img src="Logo2.png" id="logo">
+                        </img>
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="UnderNav"></div>
+    <div class="container">
+        <div class="row">
+            <img class="AboutLogo" src="Logo2.png">
+        </div>
+        <div class="row">
+            <h1>מי אנחנו?</h1>
+        </div>
+            <div class="row" id="AboutContent">
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br> Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br>
+                Lorem Ipsum is simply dummy<br> text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an
+                unknown <br>
+                printer took a galley of type and <br> scrambled it to make a type specimen book. It has survived not
+                only <br>
+            </div>
+    </div>
+
+    <footer class="footer">
+        <hr>
+        <div class="container">
+            <div class="row" style="justify-content: center">
+                <img class="col-auto" id="FooterLogo" src="logo2.png">
+            </div>
+            <div class="row" style="justify-content: center">
+                <a class="col-auto" id="SocialMediaLogo" href="www.twitter.com"><img src="twitter.png"></a>
+                <a class="col-auto" id="SocialMediaLogo" href="www.instagram.com"><img src="instagram.png"></a>
+                <a class="col-auto" id="SocialMediaLogo" href="www.facebook.com"><img src="facebook.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
